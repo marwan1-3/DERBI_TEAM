@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Sensors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: aqua;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .code {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .image-container {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
+            opacity: 0.8;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Helping Sensors</h1>
+    </header>
+
+    <div class="image-container">
+        <img src="https://via.placeholder.com/800x300.png?text=Helping+Sensors" alt="Helping Sensors">
+        <div class="image-overlay">Enhancing Automation with Sensors</div>
+    </div>
+
+    <div class="container">
+        <h2>What are Helping Sensors?</h2>
+        <p>Helping sensors are devices that detect changes in the environment and provide data to other systems to enhance automation and control.</p>
+
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Real-time data collection</li>
+            <li>Improved accuracy in monitoring</li>
+            <li>Integration with various systems</li>
+            <li>Enhanced safety and efficiency</li>
+        </ul>
+
+        <h2>How They Work:</h2>
+        <p>Helping sensors operate by detecting physical phenomena such as light, temperature, motion, and pressure. They convert these phenomena into signals that can be interpreted by other devices or systems.</p>
+
+        <h2>Sample Code for Sensor Integration:</h2>
+        <p>Here is an example of how to use a sensor with Arduino:</p>
+        <div class="code">
+            <pre>
+#include &lt;DHT.h&gt;
+
+#define DHTPIN 2     // Pin where the DHT sensor is connected
+#define DHTTYPE DHT11   // DHT 11
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+    Serial.begin(9600);
+    dht.begin();
+}
+
+void loop() {
+    float h = dht.readHumidity();
+    float t = dht.readTemperature();
+
+    if (isnan(h) || isnan(t)) {
+        Serial.println("Failed to read from DHT sensor!");
+        return;
+    }
+
+    Serial.print("Humidity: ");
+    Serial.print(h);
+    Serial.print(" %\t");
+    Serial.print("Temperature: ");
+    Serial.print(t);
+    Serial.println(" *C");
+    delay(2000);
+}
+            </pre>
+        </div>
+
+        <h2>Conclusion:</h2>
+        <p>Helping sensors play a crucial role in modern automation systems, providing valuable data that enhances functionality and efficiency.</p>
+    </div>
+
+</body>
+</html>
