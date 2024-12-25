@@ -5,13 +5,13 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial,sans-serif;
+    background-color: #ffffff ;
   }
   
-  header {
-    background-color: #333;
-    color: white;
+ .ooo {
+   background-color: #030162;
+   color: #dad8d8;
     padding: 20px;
     text-align: center;
   }
@@ -36,14 +36,14 @@
     text-decoration: none;
   }
 
-  id{   
+  .id{   
     left: 70px;
     background-color: #333;
     border-radius: 3px ;
   }
   #hero {
-    background-color: #009688;
-    color: white;
+    background-color: #d1d1d1;
+    color: #030162;
     padding: 50px;
     text-align: center;
   }
@@ -53,7 +53,7 @@
   }
   
   #hero button {
-    background-color: #ff5722;
+    background-color: #030162;
     border: none;
     padding: 10px 20px;
     color: white;
@@ -63,7 +63,7 @@
   }
   
   #hero button:hover {
-    background-color: #e64a19;
+    background-color: #2a298f;
   }
   
   section {
@@ -75,16 +75,23 @@
   h2 {
     text-align: center;
     margin-bottom: 20px;
+    color:#030162;
   }
   
   .feature {
-    background-color: white;
+    background-color: #030162;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   
+   color: #fff;
   }
-  
+  .omar{
+    background-color: #d1d1d1;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   color: #5d5c5c;
+  }
   ul {
     list-style: none;
   }
@@ -101,7 +108,7 @@
   }
   
   footer a {
-    color: #ff5722;
+    color: #858d71;
     text-decoration: none;
   }
   
@@ -119,7 +126,7 @@
 
 .content {
   /* height: 2000px; لجعل الصفحة أطول حتى نتمكن من التمرير */
-  background-image: url('../photo/images\ \(1\).jpeg'); /* مسار الصورة */
+  background-image: url('../images.png'); /* مسار الصورة */
   background-attachment: fixed; /* لجعل الصورة ثابتة أثناء التمرير */
   background-size: cover; /* لضبط الصورة لتغطي كامل الخلفية */
   background-position: center; /* لضبط الصورة في المنتصف */
@@ -132,13 +139,9 @@
 }
 
 
-img{
-  border-radius: 3px ;
-}
-
 a{
   text-decoration: none;
-  color: black;
+  color:  #030162;
 }
 
 
@@ -176,7 +179,7 @@ header h1 {
   object-fit: cover;
   border-radius: 10px;
     /* height: 2000px; لجعل الصفحة أطول حتى نتمكن من التمرير */
-    background-image: url('../smart-home-background-flat-style_23-2147850591.avif'); /* مسار الصورة */
+    background-image: url('../images.png'); /* مسار الصورة */
     background-attachment: fixed; /* لجعل الصورة ثابتة أثناء التمرير */
     background-size: cover; /* لضبط الصورة لتغطي كامل الخلفية */
     background-position: center; /* لضبط الصورة في المنتصف */
@@ -205,7 +208,9 @@ header h1 {
 .skills li {
   margin-bottom: 10px;
 }
-
+.ppp{
+  color: #6663eb; 
+}
 .experience {
   padding: 20px;
 }
